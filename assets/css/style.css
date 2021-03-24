@@ -6,13 +6,27 @@
     box-sizing: border-box;
 }
 
+/*/////////// classi utility////////// */
+.container
+{
+    width: 85%;
+    margin: auto;
+}
+
+.clearfix::after
+{
+    content: '';
+    display: t;
+    clear: both;
+}
+
 /* visualizzazione con classe debug per colori sezioni */
 
-.debug header
+/* .debug header
 {
     height: 450px;
     background-color: blue;
-}
+} */
 
 .debug main
 {
@@ -26,12 +40,73 @@
     background-color: rgb(75, 75, 80);
 }
 
-
-
 body
 {
     background-color: rgb(22, 217, 252);
     font-family: 'Roboto', sans-serif;
     text-align: center;
 
+}
+
+/*******************************************
+                 header 
+********************************************/
+
+#siteHeder 
+{
+    color: white;
+    background-color: #0C325A;
+    height: 800px;
+}
+
+.nav_logo
+{
+    float: left;
+    width: 15%;
+    text-align: left;
+}
+
+.nav_logo > img
+{
+   width: 70%;
+}
+
+.nav_left
+{
+    width: 45%;
+    float: left;
+    text-align: left;
+}
+
+.nav_right
+{
+    width: 40%;
+    float: left;
+    text-align: right;
+}
+
+.nav_left > ul > li, .nav_right > ul > li
+{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 15px 15px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#btn_login
+{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#btn_piano
+{
+    background-color: #7CBB02;
+    border-radius: 10px;
+    padding: 5px;
 }

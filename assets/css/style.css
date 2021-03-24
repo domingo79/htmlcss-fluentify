@@ -147,3 +147,38 @@ header
     background: #7CBB02;
     text-align: center;
 }
+
+/*************************************
+            main 
+ ************************************/
+
+#siteMain{
+    width: 100%;
+
+}
+ 
+ .sez_row
+ {
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-color: grey;
+ }
+
+ .sezione
+ {
+    float: left;
+    width: calc(100% / 3);
+    height: 400px;
+    background-color: hotpink;
+
+ }
+
+ .colonna
+ {
+     float: left;
+     width: calc(100% /2);
+     height: 400px;
+     background-color: indianred;
+
+ }

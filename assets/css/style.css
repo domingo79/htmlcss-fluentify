@@ -9,7 +9,7 @@
 /*/////////// classi utility////////// */
 .container
 {
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
@@ -52,18 +52,30 @@ body
                  header 
 ********************************************/
 
+header
+{
+    background-image: url('../img/background-header.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-y: bottom;
+    background-position-x: right;
+
+
+}
+
 #siteHeder 
 {
     color: white;
     background-color: #0C325A;
-    height: 800px;
+    height: 900px;
 }
 
-.nav_logo
+.nav_logo               /*set per il logo*/
 {
     float: left;
     width: 15%;
     text-align: left;
+    margin-top: 10px;
 }
 
 .nav_logo > img
@@ -71,21 +83,23 @@ body
    width: 70%;
 }
 
-.nav_left
+.nav_left               /*larghezza nav-bar sx*/
 {
     width: 45%;
     float: left;
     text-align: left;
+    margin-top: 20px;
 }
 
-.nav_right
+.nav_right              /*larghezza nav-bar dx*/
 {
     width: 40%;
     float: left;
     text-align: right;
+    margin-top: 20px;
 }
 
-.nav_left > ul > li, .nav_right > ul > li
+.nav_left > ul > li, .nav_right > ul > li       /*proprietà comuni per le nav bar sx e dx*/
 {
     display: inline-block;
     text-decoration: none;
@@ -96,17 +110,40 @@ body
     line-height: 40px;
 }
 
-#btn_login
+#btn_login              /*/// bottone login ///*/
 {
+    width: 130px;
+    text-align: center;
     border: 2px solid white;
     border-radius: 10px;
     padding: 5px;
 
 }
 
-#btn_piano
+#btn_piano        /*/// bottone struttura un piano   ///*/
 {
     background-color: #7CBB02;
     border-radius: 10px;
     padding: 5px;
+}
+
+.titolo_heder
+{
+    position: absolute;
+    top: 30%;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.titolo_heder > span
+{
+    width: 50%;
+    display: block;
+    margin-top: 60px;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 40px;
+    border-radius: 10px;
+    background: #7CBB02;
+    text-align: center;
 }
